@@ -65,6 +65,7 @@ public class Methods {
 			result.append(Character.toUpperCase(splitString[i].charAt(0)) + 
 					splitString[i].substring(1));
 		}
+		
 		return result.toString();
 	}
 

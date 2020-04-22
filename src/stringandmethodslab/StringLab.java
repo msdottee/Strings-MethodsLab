@@ -87,6 +87,8 @@ public class StringLab {
 		phrase = scnr.nextLine();
 		System.out.println("Here is your sentence in camel case: " + Methods.camelCase(phrase));
 		
+		System.out.println();
+		
 		System.out.println("Thanks for spending some time with me! Goodbye!");
 		
 		scnr.close();
