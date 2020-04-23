@@ -13,7 +13,7 @@ public class StringMethods {
 	public static int wheresWaldo(String phrase) {
 		int stringIndex;
 		
-		stringIndex = phrase.toUpperCase().indexOf("Waldo");
+		stringIndex = phrase.indexOf("Waldo");
 		return stringIndex;
 		
 	}
