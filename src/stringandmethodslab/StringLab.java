@@ -24,7 +24,7 @@ public class StringLab {
 		System.out.println("Enter another");
 		b = scnr.next();
 		System.out.println("The longer word is: ");
-		soLong(a, b);
+		StringMethods.soLong(a, b);
 		
 		System.out.println();
 		
@@ -38,8 +38,7 @@ public class StringLab {
 		
 		System.out.println("Please enter a word");
 		word = scnr.next();
-		
-		letterize(word);
+		StringMethods.letterize(word);
 		
 		System.out.println();
 		
