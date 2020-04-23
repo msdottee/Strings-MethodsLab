@@ -1,6 +1,6 @@
 package stringandmethodslab;
 
-public class Methods {
+public class StringMethods {
 	
 	public static String capitalize(String word) {
 		String newWord;
@@ -51,6 +51,26 @@ public class Methods {
 		}
 		
 		return newPhrase;
+	}
+	
+	public static void soLong(String a, String b) {
+		
+		if(a.length() > b.length()) {
+			System.out.println(a);
+		} else if (a.length() < b.length()) {
+			System.out.println(b);
+		} else {
+			System.out.println(a + " " + b);
+		}
+		
+	}
+	
+	public static void letterize(String word) {
+		String newWord = StringMethods.capitalize(word);
+		
+		for (int i = 0; i < newWord.length(); i++) {
+			System.out.println(newWord.charAt(i));
+		}
 	}
 	
 	public static String camelCase(String phrase) {
