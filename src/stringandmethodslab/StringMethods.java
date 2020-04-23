@@ -53,6 +53,22 @@ public class StringMethods {
 		return newPhrase;
 	}
 	
+	public static String camelCase(String phrase) {
+		StringBuilder result = new StringBuilder();
+		
+		String[] splitString = phrase.split(" ");
+		
+		result.append(splitString[0]);
+		
+		for(int i = 1; i < splitString.length; i++) {
+			
+			result.append(Character.toUpperCase(splitString[i].charAt(0)) + 
+					splitString[i].substring(1));
+		}
+		
+		return result.toString();
+	}
+	
 	public static void soLong(String a, String b) {
 		
 		if(a.length() > b.length()) {
@@ -73,20 +89,6 @@ public class StringMethods {
 		}
 	}
 	
-	public static String camelCase(String phrase) {
-		StringBuilder result = new StringBuilder();
-		
-		String[] splitString = phrase.split(" ");
-		
-		result.append(splitString[0]);
-		
-		for(int i = 1; i < splitString.length; i++) {
-			
-			result.append(Character.toUpperCase(splitString[i].charAt(0)) + 
-					splitString[i].substring(1));
-		}
-		
-		return result.toString();
-	}
+
 
 }
