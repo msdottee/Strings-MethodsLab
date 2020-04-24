@@ -7,22 +7,16 @@ public class StringLab {
 	public static void main(String[] args) {
 		Scanner scnr = new Scanner(System.in);
 		
-		String word;
-		String phrase;
-		String a;
-		String b;
-		String s;
-		
 		System.out.println("Enter a word with random capitalization.");
-		word = scnr.next();
+		String word = scnr.next();
 		System.out.println("Abracadabra: " + StringMethods.capitalize(word));
 		
 		System.out.println();
 		
 		System.out.println("Enter a word of any length.");
-		a = scnr.next();
+		String a = scnr.next();
 		System.out.println("Enter another of any length.");
-		b = scnr.next();
+		String b = scnr.next();
 		System.out.println("The longer word is: ");
 		StringMethods.soLong(a, b);
 		
@@ -45,13 +39,13 @@ public class StringLab {
 		scnr.nextLine();
 		
 		System.out.println("Enter a sentence with Waldo in it.");
-		phrase = scnr.nextLine();
+		String phrase = scnr.nextLine();
 		System.out.println("Waldo is at index: " + StringMethods.wheresWaldo(phrase));
 		
 		System.out.println();
 		
 		System.out.println("Please enter a sentence you would like to see in reverse.");
-		s = scnr.nextLine();
+		String s = scnr.nextLine();
 		System.out.println("Your string in reverse: " + StringMethods.reverse(s));
 		
 		System.out.println();
