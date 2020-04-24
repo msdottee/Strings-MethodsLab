@@ -47,7 +47,7 @@ public class StringMethods {
 			mathIndex = phrase.indexOf("math");
 			newPhrase = phrase.substring(mathIndex);
 		} else {
-			newPhrase = "dud";
+			newPhrase = "Wow! That sentence was a dud!";
 		}
 		
 		return newPhrase;
@@ -63,7 +63,7 @@ public class StringMethods {
 		for(int i = 1; i < splitString.length; i++) {
 			
 			result.append(Character.toUpperCase(splitString[i].charAt(0)) + 
-					splitString[i].substring(1));
+					splitString[i].substring(1).toLowerCase());
 		}
 		
 		return result.toString();
