@@ -19,24 +19,24 @@ public class StringLab {
 		
 		System.out.println();
 		
-		System.out.println("Enter a word");
+		System.out.println("Enter a word of any length.");
 		a = scnr.next();
-		System.out.println("Enter another");
+		System.out.println("Enter another of any length.");
 		b = scnr.next();
 		System.out.println("The longer word is: ");
 		StringMethods.soLong(a, b);
 		
 		System.out.println();
 		
-		System.out.println("Enter a word");
+		System.out.println("Enter a word that satrts with any letter.");
 		a = scnr.next();
-		System.out.println("Enter another word.");
+		System.out.println("Enter another word that starts with a different letter.");
 		b = scnr.next();
 		System.out.println("Here are the words in alphabetical order: " + StringMethods.firstThingsFirst(a, b) + " ");
 		
 		System.out.println();
 		
-		System.out.println("Please enter a word");
+		System.out.println("Please enter a word of your choosing.");
 		word = scnr.next();
 		StringMethods.letterize(word);
 		
@@ -50,7 +50,7 @@ public class StringLab {
 		
 		System.out.println();
 		
-		System.out.println("Please give me a string (word or sentence).");
+		System.out.println("Please enter a sentence you would like to see in reverse.");
 		s = scnr.nextLine();
 		System.out.println("Your string in reverse: " + StringMethods.reverse(s));
 		
